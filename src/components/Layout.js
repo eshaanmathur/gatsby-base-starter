@@ -16,12 +16,12 @@ const SITE_TITLE_QUERY = graphql`
   }
 `;
 
-const Layout = ({ children }) => (
+const Layout = ({ children, title }) => (
   <StaticQuery
     query={SITE_TITLE_QUERY}
     render={data => (
       <div className="Main__Wrapper">
-        <Meta title={data.site.siteMetadata.title} description={data.site.siteMetadata.title} />
+        <Meta title={`${data.site.siteMetadata.title} | ${title}`} description={data.site.siteMetadata.description} />
         {children}
       </div>
     )}
@@ -30,6 +30,11 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  title: PropTypes.string,
+};
+
+Layout.defaultProps = {
+  title: 'Home',
 };
 
 export default Layout;
