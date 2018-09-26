@@ -15,8 +15,6 @@
     "es6": true
   },
   "rules": {
-    "react/destructuring-assignment": 0,
-    "react/no-array-index-key": 0,
     "no-unused-vars": [
       1,
       {
@@ -60,9 +58,7 @@
         "aspects": ["invalidHref"]
       }
     ],
-    "react/jsx-filename-extension": [1, {
-      "extensions": [".js", ".jsx"]
-    }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "plugins": ["react", "prettier"]
 }
