@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
+import { ThemeProvider } from 'styled-components';
 import Meta from './Meta';
-import '../sass/reset.scss';
-import '../sass/base.scss';
+import reset from '../styles/Reset';
+import base from '../styles/Base';
+import MainWrapper from '../styles/MainWrapper';
+import theme from '../styles/theme';
 
 const SITE_TITLE_QUERY = graphql`
   query SiteTitleQuery {
@@ -16,16 +19,21 @@ const SITE_TITLE_QUERY = graphql`
   }
 `;
 
+reset();
+base();
+
 const Layout = ({ children, title }) => (
-  <StaticQuery
-    query={SITE_TITLE_QUERY}
-    render={data => (
-      <div className="Main__Wrapper">
-        <Meta title={`${data.site.siteMetadata.title} | ${title}`} description={data.site.siteMetadata.description} />
-        {children}
-      </div>
-    )}
-  />
+  <ThemeProvider theme={theme}>
+    <StaticQuery
+      query={SITE_TITLE_QUERY}
+      render={data => (
+        <MainWrapper>
+          <Meta title={`${data.site.siteMetadata.title} | ${title}`} description={data.site.siteMetadata.description} />
+          {children}
+        </MainWrapper>
+      )}
+    />
+  </ThemeProvider>
 );
 
 Layout.propTypes = {

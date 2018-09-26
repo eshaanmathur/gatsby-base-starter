@@ -1,11 +1,15 @@
-const autoprefixer = require('autoprefixer');
-
 module.exports = {
   siteMetadata: {
     title: 'Site Title',
     description: 'Site description',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -34,13 +38,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        postCssPlugins: [autoprefixer()],
-        precision: 8,
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

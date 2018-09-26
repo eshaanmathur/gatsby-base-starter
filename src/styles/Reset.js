@@ -1,4 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+import { injectGlobal } from 'styled-components';
+
+export default () => injectGlobal`
+  /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602
    License: none (public domain)
 */
@@ -137,3 +140,4 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+`;

@@ -1,5 +1,7 @@
-@import './partials/index';
+import { injectGlobal } from 'styled-components';
+import { grey } from './theme/colors';
 
+export default () => injectGlobal`
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -18,9 +20,7 @@ html {
 }
 
 body {
-  background-color: $grey;
+  background-color: ${grey};
+  font-family: 'Open Sans', sans-serif;
 }
-
-.Main__Wrapper {
-  min-width: 320px;
-}
+`;

@@ -2,7 +2,7 @@ Starter for a [Gatsby](https://www.gatsbyjs.org/) site
 
 ## Plugins used
 
-- [Gatsby Plugin Sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass)
+- [Gatsby Plugin StyledComponents](https://www.gatsbyjs.org/packages/gatsby-plugin-styled-components)
 - [React Helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet)
 - [Transform Remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark)
 - [Transformer Json](https://www.gatsbyjs.org/packages/gatsby-transformer-json)
