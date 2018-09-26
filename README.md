@@ -2,7 +2,13 @@
 
 Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
 
-With Sass , React Helmet, Markdown Files and Json Data File
+## Plugins used
+
+- Sass
+- React Helmet
+- Transform Markdown
+- Transfom Json Data File
+- Typography.js
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
 

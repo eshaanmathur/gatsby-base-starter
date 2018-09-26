@@ -6,6 +6,12 @@ module.exports = {
     description: 'Site description',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     'gatsby-transformer-remark',
     {
       resolve: `gatsby-transformer-json`,
