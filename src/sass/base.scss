@@ -1,0 +1,28 @@
+@import './partials/index';
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit;
+}
+
+body {
+  color: $black;
+  background-color: $grey;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Main__Wrapper {
+  min-width: 320px;
+}
