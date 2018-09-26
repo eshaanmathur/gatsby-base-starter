@@ -1,19 +1,18 @@
-# gatsby-starter-hello-world
-
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+Starter for a [Gatsby](https://www.gatsbyjs.org/) site
 
 ## Plugins used
 
-- Sass
-- React Helmet
-- Transform Markdown
-- Transfom Json Data File
-- Typography.js
+- [Gatsby Plugin Sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass)
+- [React Helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet)
+- [Transform Remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark)
+- [Transformer Json](https://www.gatsbyjs.org/packages/gatsby-transformer-json)
+- [Source File System](https://www.gatsbyjs.org/packages/gatsby-source-filesystem)
+- [Typography.js](https://www.gatsbyjs.org/packages/gatsby-plugin-typography)
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
 
 ```
-gatsby new gatsby-site https://github.com/eshaanmathur/gatsby-starter.git
+gatsby new gatsby-site https://github.com/eshaanmathur/gatsby-base-starter.git
 ```
 
 ## Running in development
